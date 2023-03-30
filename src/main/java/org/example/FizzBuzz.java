@@ -8,4 +8,13 @@ public class FizzBuzz {
             throw new IllegalArgumentException();
         this.number = number;
     }
+
+    public String checkFizzBuzz(){
+
+        if( number % 3 == 0)
+            return "fizz";
+        else if(number % 5 == 0)
+            return "buzz";
+        else return String.valueOf(number);
+    }
 }
